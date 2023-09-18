@@ -1,0 +1,56 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #7d7f85;
+}
+#body {
+  width: 800px;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+#head {
+  height: 260px;
+  width: 100%;
+}
+#left {
+  background-color: #1a3b98;
+  text-align: center;
+  height: 600px;
+  width: 20%;
+}
+#right {
+  background-color: #c2c3c2;
+  text-align: center;
+  color: #886829;
+  height: 560px;
+  width: 80%;
+  padding-top: 40px;
+}
+#tabela {
+  margin-top: 20px;
+  color: #000;
+  width: 500px;
+  text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+#foot {
+  background-color: #1a3b98;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+.akapit {
+  color: #af0215;
+}
+a {
+  color: #af0215;
+}
+.column {
+  background-color: #292a2c78;
+}
+.nieparzysta {
+  background-color: #aaaaaa;
+}
