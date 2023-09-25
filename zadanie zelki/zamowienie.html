@@ -49,24 +49,57 @@
         </table>
       </main>
       <aside>
-        <form action="">
-          Podaj numer krztałtu: <br />
-          <label for="krztalt"> <input type="number" id="krztalt" /> </label
-          ><br />
-          skomponuj swój kolor, podaj RGB: <br />
-          <label for="kolor">
-            R:<input type="number" id="R" /> G:<input type="number" id="G" />
-            B:<input type="number" id="B" />
-          </label>
-          <br />
-          <button>Zamów</button>
-          <p>Wybrany krztałt</p>
-          <button>Wybrany kolor</button>
-        </form>
+        <form action="#">
+            <label for="shapeNumber"
+              >Podaj numer kształtu<input
+                type="number"
+                name="shapeNumber"
+                id="shapeNumber"
+            /></label>
+            <p>skomponuj swój kolor, podaj RGB:</p>
+            <input type="number" name="R" id="R" />
+            <input type="number" name="G" id="G" />
+            <input type="number" name="B" id="B" />
+            <button id="submit">Zamów</button>
+          </form>
+          <p id="displayShape">Wybrany kształt</p>
+          <button id="color">Wybrany kolor</button>
+          <p id="error"></p>
+        </main>
       </aside>
     </section>
     <footer>
       <p>Autor Strony <i>000000000</i></p>
     </footer>
+    <script>
+        const submit = document.querySelector("#submit");
+        const kolor = document.querySelector("#color");
+        const shapes = ["miś", "żabka", "serce", "inny"];
+        const displayShape = document.querySelector("#displayShape");
+        const error = document.querySelector("#error");
+        submit.addEventListener("click", (evt) => {
+          evt.preventDefault();
+  
+          const shape = document.querySelector("#shapeNumber").value;
+          const R = document.querySelector("#R").value;
+          const G = document.querySelector("#G").value;
+          const B = document.querySelector("#B").value;
+          if (shape == 1) {
+            displayShape.textContent = `Zamówiłeś żelka: ${shapes[shape - 1]}`;
+          } else if (shape == 2) {
+            displayShape.textContent = `Zamówiłeś żelka: ${shapes[shape - 1]}`;
+          } else if (shape == 3) {
+            displayShape.textContent = `Zamówiłeś żelka: ${shapes[shape - 1]}`;
+          } else {
+            displayShape.textContent = `Zamówiłeś żelka: ${shapes[3]}`;
+          }
+  
+          if (R > 255 || R < 0 || G > 255 || G < 0 || B > 255 || B < 0) {
+            error.textContent = "Podaj prawidłową wartość kolorów";
+          } else {
+            color.style.backgroundColor = `rgb(${R}, ${G}, ${B})`;
+          }
+        });
+      </script>
   </body>
 </html>
