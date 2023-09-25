@@ -1,0 +1,57 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+article {
+  background-color: rgb(197, 85, 160);
+  text-align: center;
+  width: 50%;
+  height: 180px;
+}
+header {
+  background-color: rgb(246, 226, 222);
+  text-align: center;
+  height: 100px;
+  padding: 10px;
+}
+footer {
+  background-color: rgb(246, 226, 222);
+  text-align: center;
+  height: 100px;
+  padding: 10px;
+}
+#gora {
+  display: flex;
+}
+#dol {
+  display: flex;
+  background-color: rgb(197, 85, 160);
+  color: #fff;
+  height: 400px;
+}
+main {
+  width: 50%;
+}
+aside {
+  width: 50%;
+}
+#sugar {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  font-size: 150%;
+  padding-bottom: 120px;
+  padding-right: 70px;
+}
+table,
+td,
+th {
+  border: solid 2px blue;
+  margin: 20px;
+  padding: 10px;
+}
+h2 {
+  font-size: 200%;
+  letter-spacing: 10px;
+}
