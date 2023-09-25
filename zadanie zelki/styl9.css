@@ -38,7 +38,8 @@ aside {
 #sugar {
   display: flex;
 }
-a {
+#zamowienie {
+  background-image: url(cukierki1.png);
   text-decoration: none;
   font-size: 150%;
   padding-bottom: 120px;
