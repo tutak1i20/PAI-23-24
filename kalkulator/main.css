@@ -1,5 +1,56 @@
+body {
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 100px;
+  background-color: #a0a0a0;
+}
 #kalkulator {
+  background-color: #000000;
+  border-radius: 20px;
+  width: 420px;
+  height: 750px;
+  border-style: solid;
+  border-color: rgb(255, 187, 0);
+}
+#wynik {
+  padding: 20px;
+  height: 200px;
+  color: #fff;
+  font-size: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#przyciski {
+  padding: 20px;
+}
+.operations {
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  color: #000;
+  background-color: #a0a0a0;
+  font-size: 20px;
+}
+.numbers {
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  color: #fff;
   background-color: #202020;
-  width: 100px;
-  height: 250px;
+  font-size: 20px;
+}
+.dzialania {
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  color: #000;
+  background-color: rgb(255, 187, 0);
+  font-size: 20px;
+}
+#zero {
+  width: 160px;
 }
