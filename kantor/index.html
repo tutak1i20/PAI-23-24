@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class="container">
+            <header>
+                <h1>KANTOR WALUT</h1>
+            </header>
+            <main>
+                <h2>Kantor "San Escobar"</h2>
+                <img src="sanEscobar.jfif" alt="sanEscobar">
+                <p>Kurs walutowy określany jest poprzez podaż danej waluty oraz popyt na nią. Czynniki go określające opierają się w głównej mierze na obrocie handlowym, wymianie usług oraz polityce walutowej danego państwa. To bardzo ważne ale nie mając tego na uwadze w naszym kantorze zawsze znajdą Państwo korzystne dla siebie kursy walut.</p>
+                <img src="flatEarthers.png" alt="flatEarthers">
+                <p>Nasz kantor zapewnia także profesjonalną obsługę oraz bezproblemowe i elastyczne umowy gotówkowe. Szczególną uwagę od zawsze przykładamy do jakości oferowanych przez nas usług oraz bezpieczeństwa transakcji. Kantor San Escobar daje gwarancje najwyższej jakości usług.</p>
+            </main>
+            <aside>
+                <fieldset>
+                    <legend>Monety</legend>
+                    <label for="iloscMonet">Ilość: 
+                        <input type="text" id="iloscMonet">
+                    </label><br>
+                    <label for="kursMonet">Kurs: 
+                        <input type="text" id="kursMonet">
+                    </label><br>
+                    <p>Wartość Monet:</p><br>
+                    <p id="displayM"></p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Banknoty</legend>
+                    <label for="iloscBanknot">Ilość: 
+                        <input type="text" id="iloscBanknot">
+                    </label><br>
+                    <label for="kursBanknot">Kurs: 
+                        <input type="text" id="kursBanknot">
+                    </label><br>
+                    <p>Wartość Banknotów:</p><br>
+                    <p id="displayB"></p>
+                </fieldset>
+                <button id="btn">Wartość w PLN</button>
+                <p>Wartość twoich środków:</p>
+                <p id="displayWartosc"></p>
+            </aside>
+            <footer>
+                <p>&copy;Dariusz Tutak</p>
+            </footer>
+        </div>
+        <script>
+            const iloscMonet = document.querySelector("#iloscMonet")
+            const kursMonet = document.querySelector("#kursMonet")
+            const iloscBanknot = document.querySelector("#iloscBanknot")
+            const kursBanknot = document.querySelector("#kursBanknot")
+            const displayM = document.querySelector("#displayM")
+            const displayB = document.querySelector("#displayB")
+            const displayWartosc = document.querySelector("#displayWartosc")
+            const btn = document.querySelector("#btn")
+
+            btn.addEventListener("click", function(evt){
+                evt.preventDefault();
+                const iloscBanknotValue = iloscBanknot.value;
+                const iloscMonetValue = iloscMonet.value;
+                const kursBanknotValue = kursBanknot.value;
+                const kursMonetValue = kursMonet.value;
+
+                parseInt(iloscBanknotValue)
+                parseInt(kursBanknotValue)
+                parseInt(iloscMonetValue)
+                parseInt(kursMonetValue)
+
+                const monety = (kursMonetValue * iloscMonetValue);
+                displayM.innerHTML = `${monety.toFixed(2)} PLN`
+                displayM.style.color = "#80cb80"
+                displayM.style.fontSize = "15px"
+
+                const banknoty = (kursBanknotValue * iloscBanknotValue);
+                displayB.innerHTML = `${banknoty.toFixed(2)} PLN`
+                displayB.style.color = "#80cb80"
+                displayB.style.fontSize = "15px"
+
+                const wartosc = (banknoty + monety);
+                displayWartosc.innerHTML = `${wartosc.toFixed(2)} PLN`
+                displayWartosc.style.color = "#0f0"
+                displayWartosc.style.fontSize = "30px"
+            })
+        </script>
+</body>
+</html>
