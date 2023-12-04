@@ -1,0 +1,47 @@
+h1 {
+  text-align: center;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#kawa {
+  text-align: center;
+  margin: 20px;
+}
+#deser {
+  text-align: center;
+  margin: 20px;
+}
+#kawaCheck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#deserCheck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#imiePole {
+  margin: 10px;
+}
+#dataPole {
+  margin: 10px;
+}
+#zestaw {
+  margin: 10px;
+}
+#text {
+  margin: 20px;
+}
+#imieText {
+  margin-right: 160px;
+}
+footer {
+  text-align: center;
+}
