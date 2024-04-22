@@ -1,0 +1,45 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+main{
+    background-color: lightblue;
+    padding: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+main>section{
+    width: 50%;
+}
+#lewy{
+    background-color: dodgerblue;
+    color: white;
+    width: 20%;
+    height: 220px;
+
+}
+#srodek, #prawy{
+    background-color: dodgerblue;
+    color: white;
+    width: 40%;
+    height: 220px;
+    text-align: center;
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    border-style: dashed;
+    border: 1px;
+    border-color: dimgray;
+    background-color: gold;
+    color: darkred;
+    padding: 10px;
+}
